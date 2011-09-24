@@ -1,6 +1,7 @@
 Title: Perl, WebSockets and VNC in your browser
 Tags: Perl, WebSockets, VNC, browser
-Comments: no
+
+=pod
 
 Here is a video a made up to show that it is possible to run a VNC client in
 your browser!

@@ -1,6 +1,7 @@
 Title: Why I chose to build a Plack framework instead of using Mojolicious
 Tags: Perl, Mojolicious, Plack, framework
-Comments: no
+
+=pod
 
 I've invested a lot of time in L<Mojolicious> development (a so called "next
 generation web framework for the Perl programming language"). Of course I didn't

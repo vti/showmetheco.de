@@ -1,6 +1,8 @@
 Title: 2010. Results
 Tags: 2010, results
 
+=pod
+
 It's been a year since I started this blog. The first post was published on 14.
 of January. Not that many articles were written but it was a nice experience
 and I got some good feedback. I hope to be better and bigger the next year :)

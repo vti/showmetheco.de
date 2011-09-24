@@ -1,6 +1,7 @@
 Title: Using JQuery and AJAX in Mojolicious
 Tags: Perl, Mojolicious, JavaScript, JSON, AJAX, JQuery
-Comments: no
+
+=pod
 
 I don't really know how to program in JavaScript and that's why I chose JQuery to do all the job with AJAX. Let's see how short and easy the solution in L<Mojolicious::Lite> could be.
 

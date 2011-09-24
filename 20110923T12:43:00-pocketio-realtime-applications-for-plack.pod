@@ -1,6 +1,8 @@
 Title: PocketIO - realtime applications for Plack
 Tags: Perl, socketio
 
+=pod
+
 L<PocketIO> is a L<SocketIO|http://socket.io> port from Node.JS to Perl. It
 allows you to write realtime web applications without worring about specific
 browsers features: from long-polling to WebSockets.

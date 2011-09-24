@@ -1,6 +1,7 @@
 Title: Diving into HTML5 with WebSockets and Perl
 Tags: Perl, HTML5, WebSockets
-Comments: no
+
+=pod
 
 HTML5 is a new HTML standard that was adopted by W3C in 2007, and the first
 public working draft was published in 2008. The work is still in progress, it

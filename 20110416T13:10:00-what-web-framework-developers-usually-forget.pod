@@ -1,6 +1,7 @@
 Title: What Web Framework developers usually forget
 Tags: Perl, web, security
-Comments: no
+
+=pod
 
 There are a lot of web frameworks in the Perl world. A lot of them differ in
 features, design, code quality etc. Some of them are popular, others

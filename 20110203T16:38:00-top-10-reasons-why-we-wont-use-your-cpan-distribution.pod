@@ -1,6 +1,7 @@
 Title: Top 10 reasons why we won't use your CPAN distribution
 Tags: Perl, CPAN
-Comments: no
+
+=pod
 
 Here is a list I've built based on various answers from people on Twitter, IRC
 and other sources. Thanks guys!

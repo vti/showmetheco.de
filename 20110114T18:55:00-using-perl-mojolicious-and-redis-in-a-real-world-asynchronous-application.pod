@@ -1,7 +1,8 @@
 Title: Using Perl, Mojolicious and Redis in a real world asynchronous application
 Tags: Perl, Mojolicious, Redis, async
 Author: und3f
-Comments: no
+
+=pod
 
 L<Mojolicious> is a growing modern Perl web framework which is ready for
 building real world applications. Today we will consider architecture of

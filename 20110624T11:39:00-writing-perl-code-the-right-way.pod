@@ -1,6 +1,8 @@
 Title: Writing Perl code the right way
 Tags: perl, the right way
 
+=pod
+
 Today we are going to learn how to write a HTTP request dispatcher subroutine in
 Perl. Why Perl? Because Perl style is close to HTML style. And HTML is used on
 the internets. Below are some useful tips.

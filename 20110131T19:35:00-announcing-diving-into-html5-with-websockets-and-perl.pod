@@ -1,6 +1,7 @@
 Title: Announcing "Diving into HTML5 with WebSockets and Perl"
 Tags: Perl, HTML5, WebSockets,
-Comments: no
+
+=pod
 
 I've written an article called "Diving into HTML5 with WebSockets and Perl" for
 the B<$foo> German Perl Magazine. It was translated of course :) So if you can

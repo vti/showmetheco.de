@@ -1,6 +1,7 @@
 Title: Mojolicious, Nginx and FastCGI
 Tags: mojolicious, nginx, fastcgi, fcgi
-Comments: no
+
+=pod
 
 To use L<Mojolicious> under nginx you should first install L<Mojo::Server::FCGI>. We are going to use fcgi_prefork server, since we need a manager. Nginx configuration file needs a couple tweaks. Here is a config:
 

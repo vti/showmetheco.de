@@ -1,5 +1,6 @@
 Title: Welcome
 Tags: welcome, perl
-Comments: no
+
+=pod
 
 This is my new blog where I am going to write more on my Perl life and projects.

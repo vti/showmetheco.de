@@ -1,6 +1,7 @@
 Title: Sending email from Mojolicious
 Tags: Perl, email, Mojolicious
-Comments: no
+
+=pod
 
 Ever wondered what is the easiest way to send an email from L<Mojolicious>? Some
 simple way that would allow you to use templates and more advanced stuff? There

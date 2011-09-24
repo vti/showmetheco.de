@@ -1,6 +1,8 @@
 Title: Why one-method controllers are way better
 Tags: Perl, MVC, controller
 
+=pod
+
 I see all these Perl frameworks that have controller classes with actions. And
 sometimes I see those that have tons of configuration stuff and implementation
 details, that could be just thrown away by using plain Perl.

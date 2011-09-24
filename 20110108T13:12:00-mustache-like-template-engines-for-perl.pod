@@ -1,6 +1,7 @@
 Title: Mustache-like template engines for Perl
 Tags: Perl, template, mustache
-Comments: no
+
+=pod
 
 I am used to L<Mojo::Template>. But I noticed that I keep improving the template
 files by substituting a lot of html by Perl code or helper functions that

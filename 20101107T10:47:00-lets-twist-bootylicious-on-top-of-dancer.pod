@@ -1,6 +1,7 @@
 Title: Let's Twist: Bootylicious on top of Dancer
 Tags: Perl, Bootylicious, Dancer
-Comments: no
+
+=pod
 
 It doesn't matter what framework you use, but what does matter is how good your
 model is. By model I mean M in MVC. There are plenty ways to parse HTTP, to

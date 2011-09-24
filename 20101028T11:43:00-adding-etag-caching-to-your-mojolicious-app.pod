@@ -1,6 +1,7 @@
 Title: Adding ETag caching to your Mojolicious app
 Tags: Perl, Mojolicious, ETag, Caching
-Comments: no
+
+=pod
 
 ETag caching is a kind of resource checksum. When the requested page changes,
 checksum changes too. In comparing to the last modified date it is well suited for

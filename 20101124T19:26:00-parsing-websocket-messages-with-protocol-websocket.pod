@@ -1,6 +1,7 @@
 Title: Parsing WebSocket messages with Protocol::WebSocket
 Tags: Perl, WebSocket
-Comments: no
+
+=pod
 
 There are quite a few modules on CPAN that parse HTTP messages. But there is no
 module that parses WebSockets messages. I mean not a server or a web framework

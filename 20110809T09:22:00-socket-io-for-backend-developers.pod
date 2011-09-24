@@ -1,6 +1,7 @@
 Title: Socket.IO for backend developers
 Tags: Perl
-Comments: no
+
+=pod
 
 There is an official Socket.IO specification document, but it doesn't tell you
 the implementation details of every transport. When implementing a server side

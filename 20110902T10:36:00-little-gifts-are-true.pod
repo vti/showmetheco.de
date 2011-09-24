@@ -1,6 +1,8 @@
 Title: Little gifts are true
 Tags: Perl, gifts
 
+=pod
+
 After reading rjbs' post on
 L<Promoting little gifts|http://rjbs.manxome.org/rubric/entry/1906> I remembered
 various gifts that I received from the users of my modules. For example I

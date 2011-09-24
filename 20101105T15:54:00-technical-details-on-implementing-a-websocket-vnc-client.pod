@@ -1,6 +1,7 @@
 Title: Technical details on implementing a WebSocket VNC client
 Tags: Perl, WebSockets, VNC
-Comments: no
+
+=pod
 
 Now I am going to explain more details about the previous
 L<http://showmetheco.de/articles/2010/11/perl-websockets-and-vnc-in-your-browser.html>

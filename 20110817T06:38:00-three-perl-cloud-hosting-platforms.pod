@@ -1,6 +1,8 @@
 Title: Three Perl cloud hosting platforms
 Tags: Perl, hosting, cloud, PSGI, catalyst, dancer
 
+=pod
+
 Recently a lot of cloud hosting platforms started to appear. But most of them
 are either bound to a particular language or technology or have quite a limited
 Perl support. It is always a joy to see a new hosting company that supports my

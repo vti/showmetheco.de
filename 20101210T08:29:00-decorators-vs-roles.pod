@@ -1,6 +1,7 @@
 Title: Decorators vs Roles
 Tags: Perl, decorator, role, inheritance
-Comments: no
+
+=pod
 
 Inheritance is bad. But we can replace inheritance with various other technics
 like decorators or roles. Decorator is a pattern where you wrap another class

@@ -1,6 +1,7 @@
 Title: Pastelicious
 Tags: perl, mojo
-Comments: no
+
+=pod
 
 Yet another pastebin project, but implemented on top of L<Mojolicious::Lite>. The codebase is actually very simple but shows the best L<Mojolicious> features.
 

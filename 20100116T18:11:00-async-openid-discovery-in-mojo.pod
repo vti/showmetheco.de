@@ -1,6 +1,7 @@
 Title: Async OpenID discovery in Mojo
 Tags: Perl, Mojo, OpenID
-Comments: no
+
+=pod
 
 While still working on my async OpenID implementation Protocol::OpenID that can
 be found at L<http://github.com/vti/protocol-openid> I was refactoring discovery

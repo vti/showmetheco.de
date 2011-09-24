@@ -1,0 +1,17 @@
+Title: PocketIO - realtime applications for Plack
+Tags: Perl, socketio
+
+L<PocketIO> is a L<SocketIO|http://socket.io> port from Node.JS to Perl. It
+allows you to write realtime web applications without worring about specific
+browsers features: from long-polling to WebSockets.
+
+L<PocketIO> is built on top of L<AnyEvent> and L<Plack>, runs smoothly on
+L<Twiggy>. This way it can be easily combined with other nonblocking L<Plack>
+apps.
+
+L<PocketIO> can be scaled using L<Redis|http://redis.io> pub/sub infrastructure.
+
+Proved to work well in production with 100-150 simultaneous connections. Works
+just fine with TLS/SSL (via L<App::TLSme>) too.
+
+Check it out. On L<Github|http://github.com/vti/pocketio> or now on CPAN.

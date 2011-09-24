@@ -1,0 +1,301 @@
+Title: Three Perl cloud hosting platforms
+Tags: Perl, hosting, cloud, PSGI, catalyst, dancer
+
+Recently a lot of cloud hosting platforms started to appear. But most of them
+are either bound to a particular language or technology or have quite a limited
+Perl support. It is always a joy to see a new hosting company that supports my
+favorite language. And now we have even three alternatives!
+
+[cut]
+
+Here is a simple application that we will try to deploy (complete source code
+examples are available on github, don't copy-n-paste it ;):
+
+    use strict;
+    use warnings;
+
+    use DateTime;
+
+    my $BIRTHDAY_DAY   = 23;
+    my $BIRTHDAY_MONTH = 7;
+
+    my $app = sub {
+        my $env = shift;
+
+        my $current_time = DateTime->now;
+
+        my $body;
+        if (   $current_time->day == $BIRTHDAY_DAY
+            && $current_time->month == $BIRTHDAY_MONTH)
+        {
+            $body = 'Happy birthday!';
+        }
+        else {
+            my $next_birthday = DateTime->new(
+                year  => $current_time->year,
+                month => $BIRTHDAY_MONTH,
+                day   => $BIRTHDAY_DAY
+            );
+
+            $next_birthday += DateTime::Duration->new(years => 1)
+              if $current_time > $next_birthday;
+
+            my $diff = $next_birthday->subtract_datetime_absolute($current_time);
+
+            $body =
+              'Please, wait for just ' . $diff->in_units('seconds') . ' seconds.';
+        }
+
+        return [200, ['Content-Length' => length($body)], [$body]];
+    };
+
+    $app;
+
+It just checks if today is my birthday and otherwise tells me how many seconds
+I should wait :)
+
+=head2 dotCloud
+
+First I tried L<http://dotcloud.com>. You have to install a special
+Python-driven helper application that allows you to control your services and to
+deploy your applications. Actually any L<PSGI> compliant application can be
+pushed.
+
+=head3 Installing CLI
+
+    sudo easy_install pip && sudo pip install dotcloud
+
+=head3 Configuring CLI
+
+    dotcloud
+
+And enter you API key.
+
+=head3 Preparing a project
+
+Clone the project from L<https://github.com/vti/dotcloud-perl-example>.
+
+It should look smth like this:
+
+    dotcloud-perl-example
+    ├── dotcloud.yml
+    └── mybirthday
+        ├── app.psgi
+        └── Makefile.PL
+
+C<dotcloud.yml>:
+
+    www:
+        type: perl
+        approot: mybirthday
+
+Make sure you save L<PSGI> app as C<app.psgi>. We have dependencies, so we have
+to configure C<Makefile.PL>. Official documentation
+L<http://docs.dotcloud.com/services/perl/> provides a sample C<Makefile.PL> that
+looks like:
+
+    PREREQ_PM => {
+        'Plack'    => 0.9974,
+        'DateTime' => 0
+    },
+
+But in reality it should be a complete C<Makefile.PL>:
+
+    #!/usr/bin/env perl
+    use ExtUtils::MakeMaker;
+    WriteMakefile(
+        PREREQ_PM => {
+            'DateTime'       => 0,
+            'Plack::Request' => '0.9976',
+        },
+    );
+
+=head3 Creating a service
+
+    dotcloud create mybirthday
+
+=head3 Pushing an application
+
+    dotcloud push mybirthday dotcloud-perl-example
+
+    Deployment finished. Your application is available at the following URLs
+    www: http://ed3531d3.dotcloud.com/
+
+If you face any problems just run C<dotcloud logs mybirthday.www> and you will
+get all the logs. It is very easy to spot a problem.
+
+=head3 More examples
+
+=over
+
+=item * Dancer L<http://blogs.perl.org/users/marco_fontani/2011/04/dancing-on-a-cloud-made-of-pearls.html>
+
+=item * Catalyst L<http://onionstand.blogspot.com/2011/04/catalyst-in-cloud.html>
+
+=back
+
+=head2 ActiveState Stackato
+
+Then I tried L<http://www.activestate.com/cloud> platform. This is more like a
+personal cloud service. You get a virtual machine image with pre-setup
+components. An additional helper application is also available, but you can
+actually use a ssh client and run commands on the server. There are some tweaks
+with the network setup but they are well described on the documentation page.
+
+=head3 Installing CLI
+
+Download and put somewhere in your C<PATH>
+C<stackato> CLI application L<http://community.activestate.com/stackato/download>.
+
+Then download a Virtual Machine image from the same page. I've downloaded
+VirtualBox and had no problems.
+
+=head3 Configuring CLI
+
+Just follow the instructions at
+L<http://community.activestate.com/stackato/documentation/getstarted>.
+
+=head3 Preparing a project
+
+Clone the project from L<https://github.com/vti/activestate-stackato-perl-example>.
+
+Our project should look smth like this:
+
+    activestate-stackato-perl-example
+    └── Makefile.PL
+    └── app.psgi
+
+Where
+
+=over
+
+=item C<Makefile.PL> is the same for dotCloud
+
+    #!/usr/bin/env perl
+    use ExtUtils::MakeMaker;
+    WriteMakefile(
+        PREREQ_PM => {
+            'DateTime'       => 0,
+            'Plack::Request' => '0.9976',
+        },
+    );
+
+=item C<app.psgi> is our application
+
+=back
+
+=head3 Pushing an application
+
+    stackato push mybirthday
+
+And then visit your applicaton localy, for example L<mybirthday.stackato.local>.
+
+=head3 More examples
+
+=over
+
+=item * Catalyst L<https://github.com/ActiveState/stackato-samples/tree/master/perl/catalyst-welcome>
+
+=back
+
+=head2 Fluxflex
+
+Recently I found L<http://www.fluxflex.com>. Maybe it is not as powerful as
+previous solutions, but it doesn't require you to install any additional
+programs for pushing your apps, integrates with L<http://github.com> and is very
+very very cheap. A good choice for simple and medium websites.
+
+=head3 Preparing a project
+
+Clone the project from L<https://github.com/vti/fluxflex-perl-example>.
+
+You can either create a new GitHub repository or just fork the link from above.
+
+    fluxflex-perl-example
+    ├── extlib
+    └── public_html
+        ├── .htaccess
+        └── dispatch.fcgi
+
+Where
+
+=over
+
+=item C<extlib> is a directory for our dependencies.
+
+=item C<.htaccess>
+
+    Options +FollowSymLinks +ExecCGI
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ dispatch.fcgi/$1 [QSA,L]
+    DirectoryIndex dispatch.fcgi index.html index.htm
+
+=item C<dispatch.fcgi>
+
+    #!/usr/bin/env perl
+
+    use strict;
+    use warnings;
+
+    use Plack::Handler::FCGI;
+
+    my $app = sub {
+        # our application
+    };
+
+    Plack::Handler::FCGI->new->run($app);
+
+=back
+
+B<IMPORTANT>! Do not forget to change C<dispatch.fcgi> permissions to C<755>.
+
+    chmod +x public_html/dispatch.fcgi
+
+Or you will waste a lot of time trying to figure out what's this all about:
+
+    Premature end of script headers: dispatch.fcgi
+
+=head3 Creating a service
+
+Create a service online and connect to your GitHub project.
+
+=head3 Pushing an application
+
+Just a normal C<git push>. Easy. The project will be updated automatically (or
+manually via deploy button).
+
+    git push
+
+And then visit you application:
+
+    http://mybirthday.fluxflex.com/
+
+=head3 More examples
+
+=over
+
+=item * Simple CGI scripts L<https://github.com/alg0002/fluxflex_perl_cgi_sample>
+
+=item * CGI::Application L<https://github.com/kyoro/fluxflex_sample_fastcgi_perl_basic>
+
+=item * Blosxom L<https://github.com/mattn/fluxflex-blosxom>
+
+=item * Simple PSGI app L<https://github.com/mattn/fluxflex-plack-min>
+
+=item * PSGI streaming L<https://github.com/hiratara/fluxflex-psgi-streaming>
+
+=item * Catalyst L<https://github.com/kyoro/fluxflex_sample_perl_catalyst>
+
+=back
+
+=head2 What am I using?
+
+Unfortunately none of them. My recent interests lie in real-time web
+applications that require WebSocket proxying. Available platforms are built on
+Nginx+uWSGI or Apache+FastCGI technologies and are not suitable without
+additional patching, hacking etc.
+
+I hope this will be changed soon.

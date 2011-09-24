@@ -1,0 +1,25 @@
+Title: 15 Years of CPAN
+Tags: Perl, CPAN
+Comments: no
+
+Here is a video I've made to show that Perl is like a living organism! ;)
+
+=begin html
+
+<iframe src="http://player.vimeo.com/video/18424044" width="640" height="480" frameborder="0"></iframe><p><a href="http://vimeo.com/18424044">15 Years of CPAN</a> from <a href="http://vimeo.com/user3867910">Viacheslav Tykhanovskyi</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+=end html
+
+[cut] How I did it
+
+=head2 How I did it?
+
+=over 4
+
+=item * extracted distributions from L<http://backpan.perl.org>
+
+=item * used awesome Gource L<http://code.google.com/p/gource> software for video generation
+
+=item * added music and text
+
+=back

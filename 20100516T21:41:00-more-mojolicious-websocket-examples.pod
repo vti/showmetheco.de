@@ -1,0 +1,43 @@
+Title: More Mojolicious WebSocket examples
+Tags: html5, websocket, perl, mojolicious
+Comments: no
+
+I've been playing with WebSockets for a while. And here are some links to the
+projects I've came up with. Server side is written in L<Mojolicious::Lite>.
+Client side is mostly JQuery. For non websocket browser Flash workaround is used.
+
+B<Showmetheshell>
+
+An interactive shell with colors and unicode support.
+
+L<http://github.com/vti/showmetheshell>
+
+Some screenshots are available in the repo:
+
+L<http://github.com/vti/showmetheshell/tree/master/screenshots>
+
+B<Showmethedesktop>
+
+A HTML5 Canvas VNC client.
+
+L<http://github.com/vti/showmethedesktop>
+
+When implementing this I've also written a Protocol::RFB module. That does the job.
+
+L<http://github.com/vti/protocol-rfb>
+
+B<Showmethedrawing>
+
+A HTML5 Canvas simple colaboration drawing.
+
+L<http://github.com/vti/showmethedrawing>
+
+B<Mojomber>
+
+A simple multiplayer Bomberman clone. Fun to play :)
+
+L<http://github.com/vti/mojomber>
+
+And BTW, L<Mojo::JSON::Any> speeds up everything.
+
+Enough self advertising for today ;)

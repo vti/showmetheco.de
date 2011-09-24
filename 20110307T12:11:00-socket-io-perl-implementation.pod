@@ -1,0 +1,23 @@
+Title: Socket.IO Perl implementation
+Tags: perl, socket.io
+
+Socket.IO is a universal way to write realtime web apps that work in every
+browser. Socket.IO supports several transports that are chosen during runtime
+based on the current browser capabilities:
+
+    * WebSocket
+    * Adobe® Flash® Socket
+    * AJAX long polling
+    * AJAX multipart streaming
+    * Forever Iframe
+    * JSONP Polling
+
+This way it is possible to write WebSocket-like web apps without bothering much
+about the vendor support.
+
+Socket.IO has an official client and various (among official) server
+implementations in different languages and frameworks. Here is a new Perl
+implementation L<http://github.com/vti/plack-middleware-socketio> built on top
+of L<Plack> as a normal middleware.
+
+Socket.IO++

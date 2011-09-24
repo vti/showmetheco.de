@@ -1,0 +1,13 @@
+Title: Little gifts are true
+Tags: Perl, gifts
+
+After reading rjbs' post on
+L<Promoting little gifts|http://rjbs.manxome.org/rubric/entry/1906> I remembered
+various gifts that I received from the users of my modules. For example I
+received a ebook from L<Jens Gassmann|https://github.com/jegade> for working on
+L<PocketIO|http://github.com/vti/pocketio> and today I got a thankful note and a
+donation from L<http://privytalks.com>, the website that uses the same
+L<PocketIO|http://github.com/vti/pocketio> in
+production (scary!). Funny that I can use I<something> that uses I<something> I wrote.
+
+It's always nice to receive thanks and gifts. Thank you!

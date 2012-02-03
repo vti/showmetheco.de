@@ -1,7 +1,6 @@
 Title: Mojolicious and WebSockets
 Tags: Perl, Mojolicious, WebSockets
-
-=pod
+Comments: no
 
 So here is my first attempt to try this new awesome WebSocket technology. And since L<Mojolicious> is already compatible I couldn't wait too long.
 

@@ -1,8 +1,6 @@
 Title: Stash, Registry and DI container
 Tags: Perl, design patterns
 
-=pod
-
 It turns out that all web frameworks require some kind of a sharing mechanism
 for passing variables to templates, holding configuration, database connection
 etc. This common data should be accessed from everywhere: controllers, models,

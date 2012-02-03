@@ -1,7 +1,6 @@
 Title: Building a multilingual website with Mojolicious
 Tags: Perl, Mojolicious, I18N
-
-=pod
+Comments: no
 
 For a long time there was the L<MojoX::Locale::Maketext> module. But it is currently deprecated since L<Mojolicious> has L<Mojolicious::Plugin::I18n> in its core. Today we will try to use it to create a multilingual website.
 

@@ -1,7 +1,6 @@
 Title: Haml renderer for Mojolicious
 Tags: Perl, Mojolicious, Haml, renderer
-
-=pod
+Comments: no
 
 After writing L<Text::Haml> which is a Haml implementation in Perl the next logical step was to write a renderer for L<Mojolicious>. So here it is L<http://github.com/vti/mojox-renderer-haml>. Besides a renderer itself there is also a L<Mojolicious::Plugin::HamlRenderer> module that makes it really easy to plug in a new template handler.
 

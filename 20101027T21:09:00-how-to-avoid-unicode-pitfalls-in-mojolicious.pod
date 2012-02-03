@@ -1,7 +1,6 @@
 Title: How to avoid Unicode pitfalls in Mojolicious
 Tags: perl, mojolicious, unicode
-
-=pod
+Comments: no
 
 Unicode is hard. Unicode in Perl is even harder, because sometimes Perl is just
 too smart. While L<Mojolicious> is a web framework, no wonder why it should

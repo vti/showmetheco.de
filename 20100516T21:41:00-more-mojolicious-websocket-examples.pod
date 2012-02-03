@@ -1,7 +1,6 @@
 Title: More Mojolicious WebSocket examples
 Tags: html5, websocket, perl, mojolicious
-
-=pod
+Comments: no
 
 I've been playing with WebSockets for a while. And here are some links to the
 projects I've came up with. Server side is written in L<Mojolicious::Lite>.

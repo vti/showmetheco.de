@@ -1,8 +1,6 @@
 Title: Translating PSGI specification into russian
 Tags: Perl, PSGI, translation, russian
 
-=pod
-
 We've started translating L<PSGI> specification into russian
 L<https://github.com/vti/psgi-specs-ru>. If you speak or know russian you are
 more than welcome to join. We use C<#ru.pm> channel on C<irc.perl.org> for

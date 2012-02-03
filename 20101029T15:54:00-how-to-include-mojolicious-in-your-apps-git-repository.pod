@@ -1,7 +1,6 @@
 Title: How to include Mojolicious in your app's git repository
 Tags: Perl, Mojolicious, git
-
-=pod
+Comments: no
 
 When you are developing an application that you want to deploy really fast and
 easy you should consider including L<Mojolicious> files in your repository.

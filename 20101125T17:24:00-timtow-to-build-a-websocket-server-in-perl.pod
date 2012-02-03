@@ -1,7 +1,6 @@
 Title: TIMTOW to build a WebSocket server in Perl
 Tags: Perl, WebSockets, event loop
-
-=pod
+Comments: no
 
 Today I am going to describe many ways how to build a WebSocket server in
 Perl, including ready to go WebSocket servers and web frameworks with no

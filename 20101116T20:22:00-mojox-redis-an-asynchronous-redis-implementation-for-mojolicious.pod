@@ -1,8 +1,7 @@
 Title: MojoX::Redis: an asynchronous Redis implementation for Mojolicious
 Author: und3f
 Tags: Perl, Mojolicious, Redis
-
-=pod
+Comments: no
 
 Author of this post is und3f, author of L<MojoX::Redis>. You can follow him on
 Twitter L<http://twitter.com/und3f> and/or GitHub L<http://github.com/und3f>.

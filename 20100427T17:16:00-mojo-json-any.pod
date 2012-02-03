@@ -1,7 +1,6 @@
 Title: Mojo::JSON::Any
 Tags: Perl, Mojolicious, JSON
-
-=pod
+Comments: no
 
 While there is always L<Mojo::JSON> out there, sometimes we need more speed.  L<JSON::XS> is the first thing that comes to mind. But they not only have different interfaces, but also work different with encodings.
 

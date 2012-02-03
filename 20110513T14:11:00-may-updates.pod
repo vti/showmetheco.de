@@ -1,5 +1,6 @@
 Title: May updates
 Tags: Perl, CPAN
+Comments: no
 
 =pod
 

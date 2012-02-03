@@ -1,8 +1,6 @@
 Title: Socket.IO Perl implementation
 Tags: perl, socket.io
 
-=pod
-
 Socket.IO is a universal way to write realtime web apps that work in every
 browser. Socket.IO supports several transports that are chosen during runtime
 based on the current browser capabilities:

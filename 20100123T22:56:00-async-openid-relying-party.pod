@@ -1,7 +1,6 @@
 Title: Async OpenID RelyingParty in Mojo
 Tags: Perl, Mojo, OpenID
-
-=pod
+Comments: no
 
 I keep working on async framework agnostic Protocol::OpenID (L<http://github.com/vti/protocol-openid>) Perl module, and just finished OpenID associations. It is always nice to have some real life tests, and with L<Mojo> it is fun and easy.
 

@@ -1,7 +1,6 @@
 Title: 15 Years of CPAN
 Tags: Perl, CPAN
-
-=pod
+Comments: no
 
 Here is a video I've made to show that Perl is like a living organism! ;)
 

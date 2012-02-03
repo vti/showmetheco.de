@@ -1,8 +1,6 @@
 Title: SSL tunnel for Perl/Plack web applications
 Tags: perl, ssl, tls, tunnel
 
-=pod
-
 Adding TLS/SSL support to your Perl web application could cause a headache if
 it's not embedded in your web server. The most popular solution is to use an ssl
 tunnel in front of your server that transparantly encrypts/decrypts messages. In

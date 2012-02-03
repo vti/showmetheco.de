@@ -1,0 +1,33 @@
+Title: PocketIO vivification
+Tags: Perl, pocketio, socketio
+
+Since C<0.10> L<PocketIO> doesn't require L<Plack> and has a new dependency
+L<Protocol::SocketIO>.
+
+[cut]
+
+I've extracted all the SocketIO implementation functionality like path parsing,
+handshake and message building into a separate distribution
+L<Protocol::SocketIO>. This way it can be uses outside of L<PocketIO> and
+L<AnyEvent>.
+
+L<PocketIO> now doesn't require L<Plack>, it requires only a L<PSGI> compatible
+server with C<psgix.io> support (like L<Feersum>). This is much easier to deploy.
+
+Why? I've got an email on why L<PocketIO> is so highly coupled with L<Plack> and
+moreover why can't SocketIO protocol implementation can't be used outside of
+L<PocketIO>?
+
+And I thought the same way. Many frameworks for various functionality I've used
+were forcing their way of doing things, and thus replacing flexibility with
+vendor lock-in. Particular implementation shoudn't stop you from replacing it
+with another one later on. And some libraries (speaking not about L<Plack> here
+:) go too far by introducing their own base classes that you have to inherit
+from, exception mechanizms that behave not in the common way and lots of code
+that you'll never need.
+
+At work when using a CPAN module we at least write an adaptor with interface and
+functionality we need, which saves us from the replacement pain or unexpected
+release lacking backwards compatibility.
+
+More KISS and YAGNI for everyone.

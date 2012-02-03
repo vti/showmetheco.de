@@ -1,7 +1,6 @@
 Title: Hypnotoad: A new preforking Perl server for Mojolicious
 Tags: Perl, Mojolicious, server, preforking
-
-=pod
+Comments: no
 
 From the documentation:
 

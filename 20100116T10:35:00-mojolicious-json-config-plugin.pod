@@ -1,7 +1,6 @@
 Title: Mojolicious JsonConfig plugin
 Tags: mojo, mojolicious, perl, plugin
-
-=pod
+Comments: no
 
 So now the JSON configuration that i used in L<Bootylicious> and Pastelicious L<http://github.com/vti/pastelicious> is available as L<Mojolicious> plugin and was added by Sebastian Riedel to the core L<Mojo> code. The source code is available at github L<http://github.com/kraih/mojo/blob/master/lib/Mojolicious/Plugin/JsonConfig.pm>. 
 

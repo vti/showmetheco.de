@@ -1,8 +1,6 @@
 Title: Perl Résumé
 Tags: Perl, dancer, metacpan, fun
 
-=pod
-
 Lately I was playing with L<http://metacpan.org> api. So I built a simple website that generates your Perl résumé based on CPAN experience, activity and impact. Runs on L<Dancer> btw.
 
 So check it out L<http://perlresume.org>!

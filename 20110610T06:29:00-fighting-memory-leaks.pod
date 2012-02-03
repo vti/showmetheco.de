@@ -1,7 +1,6 @@
 Title: Fighting memory leaks
 Tags: Perl, memory leaks
-
-=pod
+Comments: no
 
 When developing an async app in Perl it is fairly easy to introduce a memory
 leak in many anonymous subroutines. When I faced this issue in PocketIO

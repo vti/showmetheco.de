@@ -1,8 +1,6 @@
 Title: Perl routes dispatching comparison
 Tags: Perl, routes, comparison
 
-=pod
-
 There are several separate distributions on CPAN that implement routes
 dispatching. Below is my attempt in comparing L<Router::Simple>,
 L<Path::Router>, L<HTTP::Router>, L<Routes::Tiny> and L<Path::Dispatcher>.

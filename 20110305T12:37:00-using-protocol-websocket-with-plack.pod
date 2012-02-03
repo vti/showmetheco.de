@@ -1,8 +1,6 @@
 Title: Using Protocol::WebSocket with Plack
 Tags: Perl, plack, websocket
 
-=pod
-
 I recently added L<PSGI> support to L<Protocol::Websocket>. And below is an
 example of WebSocket echo server using L<Plack>, L<AnyEvent> and L<Twiggy>.
 

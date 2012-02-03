@@ -1,7 +1,6 @@
 Title: Socket.IO for backend developers
 Tags: Perl
-
-=pod
+Comments: no
 
 There is an official Socket.IO specification document, but it doesn't tell you
 the implementation details of every transport. When implementing a server side
@@ -13,7 +12,7 @@ I collected when implementing L<http://github.com/vti/pocketio>.
 
 First, read the specification L<https://github.com/learnboost/socket.io-spec>.
 
-=head1 Handshake
+=head2 Handshake
 
 In order to make some browser debug tools like Firebug happy specify a correct
 C<Content-Type> for the handshake response. I set C<text/plain>.
@@ -25,13 +24,13 @@ C<Content-Type> for the handshake response. I set C<text/plain>.
 
     1234567890:15:25:websocket,flashsocket,htmlfile,xhr-polling,jsonp-polling
 
-=head2 Tranport priority
+=head3 Tranport priority
 
 The recommented transport priority is:
 
     websocket,flashsocket,htmlfile,xhr-polling,jsonp-polling
 
-=head2 Cross-Domain connections
+=head3 Cross-Domain connections
 
 When you want to run your Socket.IO server on a different port or domain from
 the main website, you have to make sure it supports cross-domain jsonp calls.
@@ -56,7 +55,7 @@ Every next response should contain the following header:
 
     Access-Control-Allow-Origin: *
 
-=head1 Flash policy server
+=head2 Flash policy server
 
 When using a Flash fallback you must run a Flash policy server
 (L<https://github.com/keroyonn/p5-AnyEvent-FlashSocketPolicy> or
@@ -65,7 +64,7 @@ This can be a standalone server that listens on C<843> port (must be run as
 root) or an inline server that answers not only C<HTTP> but also Flash requests
 (L<Fliggy>).
 
-=head1 Transports
+=head2 Transports
 
 Now you know how to do a handshake, how to parse and build messages. As you
 already know we have to implement the following transports:
@@ -99,9 +98,9 @@ established.
 
 A detailed explanation of every transport follows.
 
-=head2 XHR Polling
+=head3 XHR Polling
 
-=head3 Server -> Client
+=head4 Server -> Client
 
 When C<XHR Polling> connection is established a C<GET> request is made awaiting
 for a delayed response from the server.
@@ -120,7 +119,7 @@ When the server wants to send a message it responses with something like:
 
 and closes the connection. It could be a chunked response by the way.
 
-=head3 Client -> Server
+=head4 Client -> Server
 
 When a client wants to send a message it creates a C<POST> request:
 
@@ -138,12 +137,12 @@ And should receive a simple C<200> response from the server:
 
     1
 
-=head2 JSONP Polling
+=head3 JSONP Polling
 
 C<JSONP Polling> is similar to C<XHR Polling>. You just have to wrap messages
 into C<JavaScript>.
 
-=head3 Server -> Client
+=head4 Server -> Client
 
 The server channel is created as a C<GET> request awaiting for a delayed response:
 
@@ -163,7 +162,7 @@ C<Content-Type>):
 And closes the connection. Noticed C<io.j[0]("a message goes here")>? Don't forget
 to escape quotes when wrapping your message.
 
-=head3 Client -> Server
+=head4 Client -> Server
 
 When a client wants to send a message it makes a C<POST> request:
 
@@ -185,12 +184,12 @@ And the client should receive a simple C<200> response from the server:
 
     1
 
-=head2 Htmlfile
+=head3 Htmlfile
 
 C<Htmlfile> is a tranport for Internet Explorer (read "some nasty hacks
 follow").
 
-=head3 Server -> Client
+=head4 Server -> Client
 
 The server channel is created as a C<GET> request and a streaming response
 (server does not close the connection when sending a message to the client, it
@@ -220,7 +219,7 @@ When the server wants to send a message it pushes a chunk to the stream:
 You have to wrap your message into C<script> tags and C<_("your messages")>
 function. Don't forget to escape quotes.
 
-=head3 Client -> Server
+=head4 Client -> Server
 
 When a client wants to send a message it makes a C<POST> request:
 
@@ -238,7 +237,7 @@ And the client should receive a simple C<200> response from the server:
 
     1
 
-=head1 Horizontal scaling
+=head2 Horizontal scaling
 
 When using Nginx with C<tcp_proxy_module>
 (L<https://github.com/yaoweibin/nginx_tcp_proxy_module>) for proxying Socket.IO
@@ -255,7 +254,7 @@ into Perl too.
 
 Scaling support for PocketIO is on the roadmap.
 
-=head1 Comments
+=head2 Comments
 
 If you found any error or something is not detailed enough, fill free to
 comment below.

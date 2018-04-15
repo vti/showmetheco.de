@@ -1,0 +1,59 @@
+Title: YAPC::Brazil 2012!
+Tags: Perl, yapc, brazil
+
+Yesterday I came back to Kiev from YAPC::Brazil 2012 in Sao Paulo. To say the
+trip was great is to say nothing. And of course all the karma goes to
+[@garu](http://twitter.com/garu_rj) for hosting us in Rio and taking care of us
+in Brazil in general!
+
+[cut]
+
+Rio is just awesome. Here are some pictures:
+
+<div>
+    <img src="/images/yapc-brazil-2012/brazil-flag.jpg" /><br />
+
+    <img src="/images/yapc-brazil-2012/beach.jpg" /><br />
+
+    <img src="/images/yapc-brazil-2012/jesus.jpg" /><br />
+
+    <img src="/images/yapc-brazil-2012/monkey.jpg" />
+</div>
+
+My hotel in Sao Paulo wasn't the best one as you can see from the window view:
+
+<div>
+    <img src="/images/yapc-brazil-2012/view-from-hotel.jpg" />
+</div>
+
+The conference itself was shared with W3C conference and the organization was
+top level. There was even a simultaneous translation into English.
+
+As usual there was a hall dedicated to the cool kids.
+
+<div>
+    <img src="/images/yapc-brazil-2012/cool-kids-panel.jpg" />
+</div>
+
+I did my talk on the first day. Here are my
+[slides](http://www.slideshare.net/vti/working-with-websockets-in-perl). Though
+I think I did ok, one of my live demos failed :D But still 2 of 3 were
+successful!
+
+I also announced YAPC::Europe 2013 in Kiev. I hope to see people from Brazil.
+
+As you probably already know [rafl](https://metacpan.org/author/FLORA) released
+perl-5.17.5 live on the second day of the conference! This was a historical event.
+
+At the end there was garu's Perl quiz. The quiz that blows your mind. My team
+got 3 of 10 answers right. The winning team got 5 :)
+
+Some tips for those traveling abroad (and me of course :):
+
+- always have cash in a respectable currency (USD, EUR, etc)
+- always check if your CC works in the destination country
+- pay more attention to the local hotels
+- buy the SIM card ASAP and have important numbers there
+- learn some trivial but important phrases
+
+I had a great time and a great company. Once again, thanks garu for having us!

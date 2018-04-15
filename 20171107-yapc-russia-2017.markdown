@@ -1,0 +1,91 @@
+Title: YAPC::Russia 2017
+Tags: Perl, yapc, yapcrussia
+
+On the 4th of November we had YAPC::Russia 2017 in Moscow. This was a 10th
+anniversary and it had to be nothing but great!
+
+Long before the conference we wanted to invite somebody special. I had talked
+to several people and finally Stevan Little agreed to come to Russia! What a
+brave American I must say :)
+
+As for me I went to shamelessly plug my project
+[kritika.io](https://kritika.io) and prepared a talk about finding code
+duplications in Perl applications on a big scale (text version in English
+is coming soon).
+
+[cut] What happened next?
+
+Flying with Aeroflot is ok. The space is a little tight, but the food is the
+best I've had on any flight.
+
+![Flight Space](/static/images/yapcrussia-2017-flight.jpg)
+
+The 3rd of November. Moscow airport. 1°C. Cold. Especially when you have
+nothing but an autumn jacket.
+
+The Aeroexpress train from Sheremetievo airport to the city (not really center
+but next to the subway and railway station) is very comfortable and not very
+expensive, I always buy a business class for 1000 rub (~15 eur). In 35 minutes
+you are there.
+
+The next stop is my hotel. I booked one for two nights for 7800 rub (~115 eur).
+Not the best, not the worst, right in the middle. The laminate on the walls was
+a bit strange though :D
+
+![Hotel](/static/images/yapcrussia-2017-hotel.jpg)
+
+The next stop is a preparty with Andrew Shitov and Ilya Chesnokov in a busy bar
+with burgers and strange beer. Andrew couldn't finish his Tears of Liberty :)
+
+The 4th of November. Time to start the conference!
+
+Here is the venue, looks dark and scary, but it's not!
+
+![Hotel](/static/images/yapcrussia-2017-mailru-office.jpg)
+
+Here is the venue from inside
+
+![From Above](/static/images/yapcrussia-2017-from-above.jpg)
+
+So we start!
+
+![Intro](/static/images/yapcrussia-2017-intro.jpg)
+
+Here is the list of the talks we had this year:
+
+1. Multithreaded image optimization in Perl by Nikolay Lavlinskiy
+2. JSON-schema validation in Perl using Javascript libraries by Nikolay Baryshnikov
+3. Automatic detection of code duplications by me
+4. How to get into the top of HighloadCup in Perl by Vladimir Perepelitsa
+5. Benefits of using Moose by Dmitry Ratkov
+6. Moxie - Not Another Moose Clone by Stevan Little
+7. [Testing tools I can't live without](https://ichesnokov.github.io/talks/testing-tools-i-cant-live-without.pdf) by Ilya Chesnokov
+8. Perl usage on AB tests example by Nikolay Baryshnikov
+9. [What's new in Perl 6](https://github.com/ash/yr2017-perl6) by Andrew Shitov
+10. Decorators in Perl by Vadim Pushtaev
+
+Here is a talk by Stevan, what a great slide!
+
+![Stevan Little](/static/images/yapcrussia-2017-stevan.jpg)
+
+Full video is already available, it will be edited a bit later by the
+organizers.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K0Zw9DumBwo" frameborder="0" allowfullscreen></iframe>
+
+There was also a lottery! And I won!
+
+![Prize](/static/images/yapcrussia-2017-prize.jpg)
+
+The organizers did a very good job. Thank you very much!
+
+After the conference we had an afterparty starting from beer and finishing with
+wiskey and cognac long after the midnight. The weather wasn't as cold anymore btw :D
+
+The next day on Sunday I wanted to walk a little bit, but almost everything was
+closed in the city center, lots of police everywhere. So I ended up going to
+GUM and eating/buying some delicious stuff.
+
+![GUM](/static/images/yapcrussia-2017-gum.jpg)
+
+It was a great time! See you next year!

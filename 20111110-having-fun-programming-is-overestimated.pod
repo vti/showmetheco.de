@@ -5,6 +5,7 @@ A "web framework that makes development fun", a "fun way to program", a "fun
 introduction". I am tired of this fun programming. Development shouldn't be fun,
 if I want fun I go and play football with my friends.
 
+    # no-perl
     Fun is an ephemeral emotion. I feel it right now, it doesn't have deep
     roots. Doesn't really go anywhere, it doesn't feed me in a deep way. It
     feels good, I like having fun... but it's different than joy.

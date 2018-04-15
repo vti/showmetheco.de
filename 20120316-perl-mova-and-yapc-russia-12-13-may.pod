@@ -1,0 +1,37 @@
+Title: Perl Mova and YAPC::Russia. 12-13 May
+Tags: Perl, events
+
+Following L<Andrew Shitov's post|http://blogs.perl.org/users/andrew_shitov/2012/03/perl-conference-in-kiev-ukraine.html> I want to invite you to visit a Perl conference in Ukraine 12-13 May.
+
+This year we are going to have some special guests: Tatsuhiko Miyagawa, Gabor
+Szabo, Florian Ragwitz, Peter Rabbitson, Torsten Raudssus and many others. If
+you still have any doubts read on, otherwise rush to the registration page
+L<http://event.perlrussia.org/yr2012/>!
+
+[cut]
+
+=head2 It's close
+
+Kiev is just 1 hour 20 minutes flight from Berlin, 3 hours from London and
+2 hours and a half from Paris.
+
+=head2 It's easy
+
+Citizens of EU, UK and US don't need visas.
+
+=head2 It's new
+
+East Europe is different from the west. You can experience a shock in culture,
+meal and drinks. Isn't it exciting?!
+
+=head2 It's convinient
+
+We will help you to find a hotel or a roommate.
+
+=head2 It's free
+
+Yes, the event is free of charge. Thanks to our sponsor L<http://gateline.net>!
+
+L<Register|http://event.perlrussia.org/yr2012/>
+
+If you still have any questions feel free to ask them via any channel you want.
